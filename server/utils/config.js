@@ -5,7 +5,7 @@ const PORT = process.env.PORT;
 const MONGODB_URI = process.env.MONGODB_URI;
 const SECRET = process.env.SECRET;
 const UPLOAD_PRESET = process.env.UPLOAD_PRESET || 'ml_default';
-
+console.log({data:process.env.PORT})
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
